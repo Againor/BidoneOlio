@@ -14,7 +14,7 @@ void setup() {
 }
 
 void loop() {
-    int distanza = sonar.ping() / US_ROUNDTRIP_CM;
+    int distanza = sonar.ping_median(10) / US_ROUNDTRIP_CM;
     if ( distanza > 3000 ){
         Serial.println ( "Fuori Portata!" );
     } else if ( distanza > vuoto ){
