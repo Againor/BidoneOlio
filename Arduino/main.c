@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include<NewPing.h>
 #include<LowPower.h>
 
